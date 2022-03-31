@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lua</title>
+    <link rel="stylesheet type=text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Brenin</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Trabalhos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </header>
+<section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Lua Cheia</h2>
+    <a href="#" id="btn">Procurar</a>
+    <img src="mountains_front.png" id="mountains_front">
+</section>
+<div class="sec" id="sec">
+<h2>Zumbi pra Todo Lado</h2>
+<p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro.
+     De carne lumbering animata corpora quaeritis. Summus brains sit​​, 
+     morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.
+      Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat 
+      cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. 
+      The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for 
+      solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. 
+      Nigh tofth eliv ingdead.<br><br>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia?
+       De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, 
+       cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies.
+        Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
+        <p><br>
+            Zombies reversus ab inferno, nam malum cerebro. De carne animata corpora quaeritis. 
+            Summus sit​​, morbo vel maleficia? De Apocalypsi undead dictum mauris. Hi mortuis soulless creaturas, 
+            imo monstra adventus vultus comedat cerebella viventium. Qui offenderit rapto, terribilem incessu. The voodoo sacerdos suscitat mortuos comedere carnem. 
+            Search for solum oculi eorum defunctis cerebro. Nescio an Undead zombies. Sicut malus movie horror.
+        </p>
+    </div>
+   <script>
+       let stars = document.getElementById('stars')
+       let moon = document.getElementById('moon')
+       let mountains_behind = document.getElementById('mountains_behind')
+       let text= document.getElementById('text')
+       let btn = document.getElementById('btn')
+       let mountains_front= document.getElementById('mountains_front')
+       let header = document.querySelector('header');
+
+
+
+       window.addEventListener('scroll', function(){
+           let value = window.scrollY;
+           stars.style.left = value * 0.25 + 'px';
+           moon.style.top = value * 1.05 + 'px';  
+           mountains_behind.style.top = value * 0.5 + 'px';    
+           mountains_front.style.top = value * 0 + 'px';    
+           text.style.marginRight = value * 4 + 'px'; 
+           text.style.marginTop = value * 1.5 + 'px';
+           btn.style.marginTop = value * 1.5 + 'px';
+           Header.style.top = value * 0.5 +'px';
+         })
+   </script>
+</body>
+</html>
